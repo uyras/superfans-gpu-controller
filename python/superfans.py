@@ -26,16 +26,16 @@ FAN_PRESETS_DESC={
 }
 
 # list of FAN zones
-FAN_ZONE_CPU1=0 # marked as FAN10 for CPU1 (right one)
-FAN_ZONE_CPU2=1 # marked as FAN9 for CPU2 (left one)
-FAN_ZONE_SYS2=2 # marked as FAN1-4 (right ones)
-FAN_ZONE_SYS1=3 # marked as FAN5-8 (left ones)
+FAN_ZONE_CPU1=0 
+FAN_ZONE_CPU2=1 
+FAN_ZONE_SYS2=2 
+FAN_ZONE_SYS1=3
 FAN_ZONES=[FAN_ZONE_CPU1, FAN_ZONE_CPU2, FAN_ZONE_SYS2, FAN_ZONE_SYS1]
 FAN_ZONES_STR={
-  FAN_ZONE_CPU1:'cpu1',
-  FAN_ZONE_CPU2:'cpu2',
-  FAN_ZONE_SYS2:'system2',
-  FAN_ZONE_SYS1:'system1',
+  FAN_ZONE_CPU1:'system1',
+  FAN_ZONE_CPU2:'system2',
+  FAN_ZONE_SYS2:'system3',
+  FAN_ZONE_SYS1:'system4',
 }
 
 # list of FANs and zone member association
@@ -51,10 +51,10 @@ FAN9 ='FAN9'
 FAN10 ='FAN10'
 
 FAN_ZONES_MEMBERS= {
-  FAN_ZONE_CPU1:[FAN10],
-  FAN_ZONE_CPU2:[FAN9],
-  FAN_ZONE_SYS2:[FAN1,FAN2,FAN3,FAN4],
-  FAN_ZONE_SYS1:[FAN5,FAN6,FAN7,FAN8],
+  FAN_ZONE_CPU1:[FAN1,FAN2],
+  FAN_ZONE_CPU2:[FAN3,FAN4],
+  FAN_ZONE_SYS1:[FAN5,FAN6],
+  FAN_ZONE_SYS2:[FAN7,FAN8],
 }
 
 # based on observations on SUPERMICRO_4029GP_TRT2 the

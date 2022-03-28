@@ -1,5 +1,9 @@
 # NVIDIA GPU-based FAN controller for SUPERMICRO server
 
+This fork makes the script working on Sypermicro SYS4028GR-TRT with Nvidia A100 GPUs.
+
+Next is the original readme:
+
 This controller enables automatic adjustments of FANs in SUPERMICRO servers based on GPU temperature.  Only NVIDIA GPUs are supported since the tool uses nvidia-smi to parse the GPU temperature. FANs are controlled through IPMI tool (`impitool`) using the modified superfans (https://github.com/putnam/superfans) script.
 
 # Requirements

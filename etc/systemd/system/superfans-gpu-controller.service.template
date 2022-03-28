@@ -12,7 +12,7 @@ User=root
 Group=root
 
 Environment="PYTHONUNBUFFERED=true"
-ExecStart=/placeholder/path/to/superfans-gpu-controller "/etc/superfans-gpu-controller.json"
+ExecStart=__path__ "/etc/superfans-gpu-controller.json"
 
 StandardOutput=syslog
 StandardError=syslog
